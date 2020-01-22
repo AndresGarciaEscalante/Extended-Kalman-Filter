@@ -7,9 +7,10 @@
   <param name="sensor_timeout" value="1.0"/>  
   <param name="odom_used" value="true"/>
   <param name="imu_used" value="true"/>
-  <param name="vo_used" value="true"/>
+  <param name="vo_used" value="false"/>
 
-  <remap from="odom" to="pr2_base_odometry/odom" />
+  <remap from="imu_data" to="/mobile_base/sensors/imu_data" />
+  
 </node>
 
 </launch>
