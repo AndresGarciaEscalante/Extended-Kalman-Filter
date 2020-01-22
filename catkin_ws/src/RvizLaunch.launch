@@ -1,0 +1,6 @@
+<launch>
+  
+  <!-- The Rviz node -->	
+  <node name="rviz" type="rviz" pkg="rviz" args="-d /home/andres/Sensor_Fusion_EKF/catkin_ws/src/EKFLab.rviz"/>
+
+</launch>
