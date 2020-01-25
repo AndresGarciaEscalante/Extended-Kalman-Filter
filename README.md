@@ -1,4 +1,4 @@
-# Sensor_Fusion_Extended Kalman Filter
+# Extended Kalman Filter
 ## Using Gazabo, Rviz, and ROS
 
 ![](GIF/ezgif.com-video-to-gif.gif)
