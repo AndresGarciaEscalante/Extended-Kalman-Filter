@@ -1,41 +1,65 @@
+# Sensor_Fusion_Extended Kalman Filter
+## Using Gazabo, Rviz, and ROS
+
+![](GIF/ezgif.com-video-to-gif.gif)
+
+## Setting up the enviroment:
+For this project the following set up was used:
+- Ubuntu 16.04 LTS OS
+- Ros kinetic
+- Gazebo 7.0.0
+- Rviz 1.12.17
+
+## Installation steps:
+- Clone this repository to your home directory:
+```
+$ git clone https://github.com/AndresGarciaEscalante/Sensor_Fusion_EKF
+```
+- Review the documentation and dependecies of the Packages mentioned below.
+
+- Launch the main file:
+```
+$ source devel/setup.bash
+$ roslaunch main main.launch
+```
+- Run the rqt_plot package node:
+```
+$ rosrun rqt_multiplot rqt_multiplot
+```
 ## Project Description
-### Sensor Fusion
-Merge sensors measurements to obtain a more robust and accurate value. This allows the final value to take advantage of each sensor:
-
-![](Images/robot_model.png)
-
-### Turtlebot Package:
-Provides a Turtlebot in a gazebo environment surrounded by objects.
+### Turtlebot Package
+Provide with a gazebo enviroment and the turtlebot.
 
 ![](Images/Turtlebot_Package.png)
 
-For more information about the package please refer to:
-[Turtlebot Package](https://github.com/turtlebot/turtlebot_simulator)
+For more detailed information please refere to the following link:
+[Turtle_bot_Package](https://github.com/turtlebot/turtlebot_simulator)
 
-### Robot Pose EKF Package:
-Applies **Sensor Fusion** to the robot's sensors measurements to estimate its pose
-to by using the **Extended Kalman Filter**. In this case to interface the **Turtlebot Package** with the **Robo Pose EKF Package** the following corrections were made: 
+### Robot Pose EKF Package
+Applies **Sensor Fusion** a group of sensors. Some modification were made to interface with the **Turtlebot Package** and the **Robot Pose EKF Package** as shown in the following image:
 
 ![](Images/TP_RPE.png)
 
-For more information about the package please refer to:
-[Robot Pose EKF Package](https://github.com/udacity/robot_pose_ekf )
+For more detailed information please refere to the following link:
+[Robot Pose EKF Package](https://github.com/udacity/robot_pose_ekf)
 
-### Odometry to Trajectory Package:
-Allows to generate the Unfiltered and Filtered Pose Trajectories of the Robot, as shown in the following image:
+### Odometry to Trajectory Package
+Allows to display the **Unfiltered and Filtered Position Trajectories**. The result is shown bellow:
 
 ![](Images/Odom_Package.png)
 
-For more information about the package please refer to:
-[Odometry to Trajectory Package](https://github.com/udacity/odom_to_trajectory )
+For more detailed information please refere to the following link:
+[Odometry to Trajectory Package](https://github.com/udacity/odom_to_trajectory)
 
-### Teleop Package:
-Allows to control the movement of the robot with keyboards.
+### TurtleBot Teleop Package
+Allows the movement of the **Turtlebot** in the gazebo environment by using keyboards.
 
-For more information about the package please refer to:
-[Teleop Package](https://github.com/turtlebot/turtlebot)
+![](Images/Teleop.png)
+
+For more detailed information please refere to the following link:
+[TurtleBot Teleop Package](https://github.com/turtlebot/turtlebot)
 
 ## Project Outcome
-The main objective of the project is to control the movement of the turtlebot by using the keyboards in the Gazebo environment and compare the **Unfiltered and Filtered Pose Trajectories**. Please check the full video:
+The main objective of the project is to visualice the efficiency of the **Extended Kalman Filter** to determine the position of the robot. Please check the video:  
 
-[ExtendedKalmanFilterProject](https://youtu.be/GlAfpySXPgs)
+[ExtendedKalmanFilterProject](https://www.youtube.com/watch?v=z9RUHgJ8_CY)
